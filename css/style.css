@@ -1,0 +1,598 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', 'sans-serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+section.home{
+
+    background-image: url("img/HERO\ BACKGROUND.svg");
+    background-size: fill;
+    background-repeat: no-repeat; 
+    background-position: center;
+
+    min-height: 90vh;
+    padding: 20px 0 80px 0;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    justify-content: space-around;
+}
+
+.logo{
+    width: 30%;
+}
+
+.itens{
+    width: 70%;
+    text-align: right;
+    padding-top: 8px;
+    font-size: 15px;
+}
+
+.itens a{
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    display: inline-block;
+    margin: 0 12px;
+    margin-bottom: 10px;
+}
+
+.itens a.contact-btn{
+    background-color: #0f3fd3;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.itens a:hover{
+    border-bottom: 5px solid #FFDD33;
+}
+
+.itens a.contact-btn:hover{
+    border-bottom: none;
+}
+
+.mockup{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.mockup h2{font-size: 45px; font-weight: normal; padding-bottom: 18px;}
+
+.mockup img{
+    /* design responsivo p imagens! */
+    height: 370px;
+    max-width: 100%; 
+    z-index: -10;
+}
+
+.container{
+    margin: auto;
+    position: relative;
+
+
+    background-image: url(img/macbook\ mockup.svg);
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 60%;
+    height: 400px;
+}
+
+.tag{
+    width: 70%;
+    background-color: rgb(38, 37, 36);
+    padding: 5% 0;
+    border-radius: 20px;
+    color: #0F3FD3;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.tag i{
+    color: rgb(19, 240, 12);
+    font-size: 50px;
+    z-index: 100;
+}
+
+
+.tag p{
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.tag a{
+    text-decoration: none;
+}
+
+/* PARTE II*/
+
+section.marcas{
+    padding: 20px 0;
+}
+
+/* reaproveitamos a config da div "center" de antes!! */
+.marcas .center img{
+    width: 20%;
+}
+
+
+section.pq-nos{
+    padding: 24px 0;
+    background-color: #FBFCFE;
+}
+
+section.pq-nos > .center > h2{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;   /* quebra a tendencia do flexbox de colocar tudo na mesma linha*/
+}
+section.pq-nos > .center > p{
+    font-size: 15px;
+    color: #ccc;
+    text-align: center;
+    width: 100%;
+}
+
+section.pq-nos .center{
+    padding: 0; /* faz a secao pq-nos ocupar 100% da width da center*/
+}
+
+.diferenciais{
+    display: flex;
+    justify-content: space-between; /* coloca box-dif igualmente espacadas*/
+    margin-top: 50px;
+}
+
+
+.box-dif{
+    background-color: white;
+    /* border: 1px solid black; */
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 20px;
+    width: 32.5%;
+
+    padding: 10px 20px 40px 20px; /* harmonia do texto*/
+}
+
+.box-dif > img{
+   margin-left: -25px;
+   height: 100px;
+}
+
+
+.box-dif > h3{
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.box-dif > p{
+    font-size: 13px;
+    color: #7E92AC;
+}
+
+
+/* PARTE III */
+
+section.banner{
+    width: 100%;
+    background-image: url("img/BANNER.svg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+
+section.banner .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+}
+
+section.banner .center > h2{
+    color: #FFFFFF;
+    font-weight: normal;
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+section.banner .center > p{
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+section.banner .center > a{
+    font-size: 12px;
+    color: #0F3FD3;
+    background-color: #FFDD33;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+}
+
+
+/* PARTE IV */
+
+
+section.beneficios .center{
+    max-width: 1280px;
+}
+
+section.beneficios .check{
+    width: 45%;
+    padding-left: 50px;
+}
+
+.check h2{
+    margin-top: 65px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+
+section.beneficios p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+
+    font-size: 13px;
+    color: #7E92AC;
+
+    margin-bottom: 0px;
+    margin-left: -10px;
+}
+
+.check img{
+    width: 70px;
+}
+
+.check span{
+    width: 80%;
+}
+
+.check h3{
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-left: 8px;
+    background-color: #255AFF;
+    color: white;
+    font-size: 12px;
+    border-radius: 14px;
+
+    padding: 15px 20px 15px 20px;
+    width: fit-content;
+}
+
+
+.imagemPC{
+    width: 55%;
+    text-align: right;
+}
+.imagemPC img{
+    width: 100%;
+    max-width: 100%; 
+}
+
+
+/* PARTE V*/
+
+section.depoimentos{
+    background-color: #FBFCFE;
+}
+
+section.depoimentos .center{
+    background-color: #FBFCFE;
+    justify-content: center; 
+    align-content: center;
+    flex-direction: column;
+
+    padding-top: 80px;
+    padding-bottom: 200px;
+
+}
+
+section.depoimentos .center > h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+.pessoas{
+    display: flex;
+    justify-content: space-between; /* coloca box-dif igualmente espacadas*/
+
+    flex-direction: row;
+    column-gap: 20px;
+
+    margin-top: 50px;
+    width: 100%;
+
+}
+
+
+.pessoa1{width: 50%;}
+.pessoa2, .pessoa3{width:32%}
+
+.pessoa1, .pessoa2, .pessoa3{
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 20px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 20px 50px #70707016;
+}
+
+.pessoas .pic{
+    margin-bottom: 30px;
+    /* width: 90px; */
+}
+
+.pessoas h3{
+    color: black;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.pessoas h4{
+    color: #7E92AC;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.pessoas p{
+    color: #7E92AC;
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+
+/* PARTE VI */
+
+
+/* PARTE VII */
+section.entre-contato{
+    padding: 40px 0;
+    text-align: center;
+}
+section.entre-contato h2{
+   font-size: 40px;
+   margin-bottom: 80px;
+}
+
+section.entre-contato .center{
+    max-width: 900px;
+    justify-content: center;
+ }
+
+ section.entre-contato form{
+     width: 100%;
+    justify-content: center;
+ }
+
+
+
+section.entre-contato input[type=text],
+section.entre-contato input[type=email]{
+    width: 100%;
+    height: 40px;
+    padding-left: 20px;
+    color: #7E92AC;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+.entre-contato textarea{
+    box-sizing: content-box;
+    width: 95%;
+    height: 120px;
+    padding: 20px;
+    color: #7E92AC;
+    background: #FCFDFF;
+    border: 1px solid #C3CCE8;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    resize: vertical;
+
+}
+
+section.entre-contato input[type=submit]{
+    text-align: center;
+    width: 30%;
+    height: 40px;
+    background: #255AFF;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 0;
+
+}
+
+footer{
+    background-color: #255AFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 20px;
+}
+
+footer h3{
+    width: 30%;
+    font-size: 13px;
+    color: white;
+}
+
+footer .itens{
+    width: 70%;
+    font-size: 15px;
+}
+
+footer .itens a{
+    margin-bottom: 10px;
+}
+
+.itens-mobile{
+    width: 50%;
+    text-align: right;
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+
+    .itens-mobile{
+        display: block;
+    }
+
+    .menu-mobile{
+        background-color:#0F3FD3;
+        position: absolute;
+        left: 0;
+        top: 75px;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+
+        opacity: 0;
+        transition: 1s;
+    }
+
+    .show{
+        opacity: 1;
+    }
+
+    .hide{
+        opacity: 0;
+    }
+
+    .menu-mobile a{
+        text-decoration: none;
+        color: #FFDD33;
+        border-bottom: 1px solid white;
+        padding: 5px;
+        text-align: center;
+        display: block;
+    }
+
+    .itens-mobile i{
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 20vh;
+    
+    }
+
+    .menu .logo{
+        text-align: center;
+        width: 50%;
+        padding-bottom: 30px;
+    }
+    
+    .menu .itens{
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        padding-top: 8px;
+    }
+
+    .menu .itens{
+        display: none;
+    }
+
+   
+    section.marcas{
+        text-align: center;
+    }
+    .marcas .center img{
+        width: 50%;
+        max-width: 100%;
+    }
+
+    .diferenciais{
+        display: flex;
+        flex-wrap: wrap;  /*faz com que as box-difs se enfileirem*/
+    }
+
+    .box-dif{
+        background-color: white;
+        border-radius: 0;
+        width: 100%;
+        margin-right: 0;
+        /*padding: 10px 20px 40px 20px; /* harmonia do texto*/
+    }
+
+    section.beneficios .check{
+        width: 100%;
+    }
+
+    section.beneficios .imagemPC{
+        width: 100%;
+        text-align: center;
+    }
+
+    .pessoas{
+        display: flex;
+        flex-direction: column;
+    }
+    .pessoa1{width: 100%;}
+    .pessoa2, .pessoa3{width:100%}
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer h3{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    footer .itens{
+        width: 100%;
+        text-align: center;
+    }
+
+    .itens a{
+        margin-bottom: 10px;
+    }
+    
+}
