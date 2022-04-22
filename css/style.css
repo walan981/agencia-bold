@@ -595,4 +595,8 @@ footer .itens a{
         margin-bottom: 10px;
     }
     
+       textarea{
+        max-width: calc(0.75*100vw); 
+    }
+    
 }
